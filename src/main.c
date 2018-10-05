@@ -13,9 +13,16 @@
 #include "FreeRTOS.h"
 #include "FreeRTOSConfig.h"
 #include "task.h"
+#include "LEDs.h"
+
+
+
 
 int main(void)
 {
+	init_LED();
+
+	vTaskStartScheduler();
 
 	for(;;);
 }
